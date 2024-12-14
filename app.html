@@ -1,0 +1,59 @@
+<!DOCTYPE window>
+<html>
+  <lia-meta>
+    <!-- The name of the app -->
+    <lia-appname>Example Name</lia-appname>
+    <!-- You can use any url for the icon, default here: -->
+    <!-- <lia-icon src="/css/icons/exe_OneDrive_icon.svg.png" /> -->
+     
+     <!-- Relative path dont work, make sure its hosted -->
+    <lia-icon src="https://www.shareicon.net/data/128x128/2016/07/25/801398_document_512x512.png" />
+
+    <!-- Colors, it can be a hex code, rgba, etc. if it works in css -->
+    <color-window>white</color-window>
+    <color-name>black</color-name>
+    <!-- <color-bg>grey</color-bg> -->
+
+    <!-- Pin to taskbar? -->
+    <lia-pin>true</lia-pin>
+  </lia-meta>
+  <main>
+    <!-- NOTE: Change myApp to your preference. -->
+     <!-- NOTE: Script tags will not work! use the dedicated file instead. -->
+    <style>
+      /* Make sure to use a parent element as selector (to avoid clashing with other components) */
+
+      /* EXAMPLES */
+      .myApp {
+        box-sizing: border-box;
+        margin: 1em;
+        color: white;
+      }
+
+      .myApp button {
+        color: black;
+        /* If you want to use a similar font */
+        font-family: inherit;
+      }
+    </style>
+    <div class="myApp">
+      <h1>My Custom App!</h1>
+      <button class="lia-button">Cool</button>
+      <button class="lia-button blue">Bluee</button>
+      <button class="lia-button yellow">Yellowi</button>
+
+      <div class="lia-card" style="color: black">
+        <h1>My Custom Card!</h1>
+        <button class="lia-button">Cool</button>
+        <button class="lia-button blue">Bluee</button>
+        <button class="lia-button yellow">Yellowi</button>
+
+        <input type="text" class="lia-input" placeholder="Type Something...">
+      </div>
+      
+      <input type="text" class="lia-input" placeholder="Type Something...">
+      <input type="text" class="lia-input" placeholder="Type Something...">
+    </div>
+
+  </main>
+</html>
