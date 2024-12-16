@@ -26,7 +26,10 @@
       /* EXAMPLES */
       .myApp {
         box-sizing: border-box;
-        margin: 1em;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         color: white;
         background-image: url("https://i.ibb.co/mh2BJnP/a.gif");
       }
@@ -35,6 +38,12 @@
         color: black;
         /* If you want to use a similar font */
         font-family: inherit;
+      }
+
+      .myApp img {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: center;
       }
     </style>
     <div class="myApp">
